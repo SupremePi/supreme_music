@@ -67,8 +67,6 @@ else
 fi
 }
 
-
-
 function music_at_boot_on_off() {
 if [ $(cat /home/pi/music_settings/music_at_boot.flag) == "0" ]
 then
@@ -89,7 +87,6 @@ else
        sudo reboot
 fi
 }
-
 
 function music_over_game_on_off() {
 if [ $(cat /home/pi/music_settings/music_over_games.flag) == "0" ]
@@ -112,7 +109,6 @@ else
 fi
 }
 
-
 function music_adult_on_off() {
 if [ $(cat /home/pi/music_settings/music_adult.flag) == "0" ]
 then
@@ -133,8 +129,6 @@ else
        sudo reboot
 fi
 }
-
-
 
 function info() {
 echo
@@ -187,7 +181,6 @@ echo -n "1.."
 sleep 1
 echo -n ":)"
 }
-
 
 function volume_menu() {
     local choice
@@ -283,7 +276,6 @@ music_play_pause=$(cat /home/pi/music_settings/music_play_pause.flag)
 music_adult=$(cat /home/pi/music_settings/music_adult.flag)
 music_at_boot=$(cat /home/pi/music_settings/music_at_boot.flag)
 music_over_games=$(cat /home/pi/music_settings/music_over_games.flag)
-
 
 if [ $music_play_pause == "1" ]
 then
