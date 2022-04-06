@@ -144,7 +144,6 @@ fi
                 sudo chmod +x /home/pi/RetroPie/retropiemenu/backgroundmusic.sh 2>/dev/null
                 sudo chmod +x /home/pi/RetroPie/retropiemenu/icons/backgroundmusic.png 2>/dev/null
 
-
 echo -e "$(tput setaf 2)Now Adding The Supreme Back Ground Music To Your Gamelist! $(tput sgr0)"
 sleep 3
 
@@ -194,15 +193,12 @@ clear
                 else
                 cp /opt/retropie/configs/all/runcommand-onend.sh /opt/retropie/configs/all/runcommand-onend.sh.bkp 2>/dev/null         
                 fi
-
-                
-                
+		
 filefound2=`cat /opt/retropie/configs/all/runcommand-onstart.sh |grep mpg123 |wc -l`
 if [[ ${filefound2} > 1 ]]; then
 sed -i '/pkill -STOP mpg123/d' /opt/retropie/configs/all/runcommand-onstart.sh
 sed -i '/pkill -CONT mpg123/d' /opt/retropie/configs/all/runcommand-onend.sh
 fi
-
 
 ifexist2=`cat /opt/retropie/configs/all/runcommand-onstart.sh |grep mpg123 |wc -l`
 if [[ ${ifexist2} > 0 ]]; then
@@ -246,7 +242,6 @@ sleep 3
 echo -e "$(tput setaf 2)Done! $(tput sgr0)"
 sleep 3
 clear
-
                 echo -e "${GREEN}"
     
                 # if mp3's are not present then get them
@@ -261,7 +256,7 @@ clear
                     sudo rm /home/pi/RetroPie/roms/music/*.zip*
                     cd || exit 0                      
                 fi 
-
+		
                 echo
                 echo "DONE!"
                 echo
@@ -284,6 +279,5 @@ clear
             exit 0
         fi    
 }
-
 
 start_menu
