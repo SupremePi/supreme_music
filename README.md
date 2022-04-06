@@ -1,7 +1,7 @@
-**Big Thanks to installtekz, Fuxxy Peach & David Marti
-  New Layout Code by the Supreme Team supremeretrogaming.com
-  Script version: 2.0
-  Tested on RetroPie version: 4.7.1**
+**Big Thanks to installtekz, Fuxxy Peach & David Marti**
+**New Layout Code by the Supreme Team supremeretrogaming.com**
+**Script version: 2.0**
+**Tested on RetroPie version: 4.7.1**
 
 ## Install
 ```
